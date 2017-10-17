@@ -14,7 +14,7 @@ Pila <T>::Pila (): vector<T> () {}
 
 template <class T>
 void Pila <T>::adicionar (T elem) {
-	push_back (elem);
+	this->push_back (elem);
 }
 
 template <class T>
