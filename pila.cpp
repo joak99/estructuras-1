@@ -7,6 +7,7 @@ class Pila : public vector <T>{
 	public:
 		Pila ();
 		void adicionar (T elem);
+		T eliminar ();
 		void mostrar ();
 };
 template <class T>
@@ -24,4 +25,13 @@ void Pila <T>::mostrar () {
 		cout << this->at (i)  << ", ";
 	cout << endl;
 }
+
+template <class T>
+T Pila <T>::eliminar () {
+	int posUltimo = this->size () - 1;
+	T elem = this->at (posUltimo);
+	this->pop_back();
+	return elem;
+}
+
 

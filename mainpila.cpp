@@ -8,4 +8,14 @@ int main () {
 	p.adicionar (7);
 	
 	p.mostrar ();
+	
+	p.eliminar ();
+	p.mostrar ();
+	p.eliminar ();
+	p.mostrar ();
+	
+	p.eliminar ();
+	p.mostrar ();
+	
+	p.eliminar ();
 }
