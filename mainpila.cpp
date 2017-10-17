@@ -1,6 +1,8 @@
 #include "pila.cpp"
+#include <stdexcept>
 
 int main () {
+  try {
 	Pila <int> p;
 	
 	p.adicionar (2);
@@ -18,4 +20,7 @@ int main () {
 	p.mostrar ();
 	
 	p.eliminar ();
+  }catch (const std::out_of_range &oor) {
+  	cout << "No hay mas elementos en la pila" << endl;
+  }
 }
